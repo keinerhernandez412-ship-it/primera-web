@@ -12,6 +12,8 @@
         <p>Pagina armada por Spring Boot a las <strong th:text="${hora}">00:00:00</strong></p>
     </header>
 
+    <p class="vacio" th:if="${#lists.isEmpty(lugares)}">Todavía no hay lugares. ¡Agregue el primero!</p>
+
     <main class="tarjetas">
         <article class="tarjeta" th:each="lugar: ${lugares}">
             <span class="sector" th:text="${lugar.sector}">sector</span>
