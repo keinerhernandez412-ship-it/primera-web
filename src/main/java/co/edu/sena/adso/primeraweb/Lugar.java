@@ -15,7 +15,7 @@ public class Lugar {
     private String sector;
     private String descripcion;
 
-    private Lugar(){
+    public Lugar(){
 
     }
 
